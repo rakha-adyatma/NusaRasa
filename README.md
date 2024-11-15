@@ -1,6 +1,6 @@
 # NusaRasa
 
-A new Flutter project.
+Sebuah project akhir mahasiswa semester 3
 
 ## Getting Started
 
