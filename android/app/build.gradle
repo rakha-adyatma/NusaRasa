@@ -1,0 +1,54 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id 'com.google.gms.google-services' // Plugin Firebase ditempatkan di sini
+    id "dev.flutter.flutter-gradle-plugin" // Flutter plugin
+}
+
+android {
+    namespace = "com.example.dapoer_nusantara"
+    compileSdk = 34 // Tentukan versi SDK yang kompatibel
+    ndkVersion = "23.1.7779620" // Sesuaikan dengan versi NDK jika dibutuhkan
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId "com.nusaras"
+        minSdk 23 // Misalnya untuk minSdk 21, sesuaikan sesuai kebutuhan
+        targetSdk 34 // Pastikan target SDK kompatibel
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'nusarasa' // Nama alias yang Anda gunakan saat membuat keystore
+            keyPassword '123456' // Kata sandi untuk key alias
+            storeFile file('C:/Users/raiha/nusarasa.jks') // Ganti dengan path ke file keystore Anda
+            storePassword '123456' // Kata sandi untuk keystore
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release // Gunakan konfigurasi penandatanganan untuk build release
+            minifyEnabled false // Ubah ke true jika Anda ingin menggunakan ProGuard
+            shrinkResources false // Ubah ke true jika ingin mengurangi ukuran sumber daya yang tidak digunakan
+        }
+    }
+}
+
+flutter {
+    source "../.."
+}
+
+dependencies {
+    implementation("com.google.android.material:material:1.12.0")
+}
