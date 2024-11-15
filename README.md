@@ -1,8 +1,10 @@
 # NusaRasa
 
-Sebuah project akhir mahasiswa semester 3
+NusaRasa - Aplikasi mobile yang menghadirkan ragam resep makanan khas dari setiap pulau di Indonesia. Dari Sumatera hingga Papua, kami siap membawa kelezatan tradisional langsung ke dapur Anda!
 
-## Getting Started
+## Poster
+![62ccebf61f9ce](https://github.com/user-attachments/assets/c33b3b07-4ced-4d9a-82f2-ee7a09268436)
+
 
 This project is a starting point for a Flutter application.
 
