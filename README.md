@@ -2,6 +2,7 @@
 NusaRasa - Aplikasi mobile yang menghadirkan ragam resep makanan khas dari setiap pulau di Indonesia. Dari Sumatera hingga Papua, kami siap membawa kelezatan tradisional langsung ke dapur Anda!
 
 # Poster
+![poster](https://github.com/user-attachments/assets/e90802d0-367d-44e3-bfc3-296495538e46)
 
 #  Fungsi Aplikasi
 Aplikasi NusaRasa berfungsi menyuguhkan anda berbagai macam resep khas pulau pulau yang ada di Indonesia dengan rincian fitur sebagai berikut
